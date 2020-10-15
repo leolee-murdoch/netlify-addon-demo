@@ -166,6 +166,7 @@
     }
 
     async function checkrDemoSubmit(submitId) {
+       console.log("checkrDemoSubmit----------")
       gotoStep2(submitId);
     }
 
@@ -199,7 +200,8 @@
 
       const reportData = await getReportData(submitId);
       console.log('reportData', reportData);
-
+      console.log("gotoStep2----------")
+      console.log(reportData)
       completeStep(2);
 
       if (reportData.error) {
