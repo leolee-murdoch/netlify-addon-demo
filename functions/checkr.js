@@ -62,7 +62,7 @@ exports.handler = async function(event, context) {
   if (!checkrKey) {
     return {
       statusCode: 200,
-      body: '{"error":"no-key"}'
+      body: '{"error":'+process.env+'}'
     }
   }
 
