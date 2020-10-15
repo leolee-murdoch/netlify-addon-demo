@@ -62,7 +62,7 @@ exports.handler = async function(event, context) {
   if (!checkrKey) {
     return {
       statusCode: 200,
-      body: '{"error":'+process.env+'}'
+      body: '{"error":'+JSON.stringify(process.env)+'}'
     }
   }
 
